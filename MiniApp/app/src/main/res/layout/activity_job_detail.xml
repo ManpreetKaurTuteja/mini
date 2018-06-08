@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.miniapp.home.activities.JobDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/title_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color">
+
+        <com.miniapp.viewExtensions.MTextView
+            android:id="@+id/title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/padding_jobs_items"
+            android:text="Job Detail"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize"
+            app:custFont="fonts/montserrat_regular.otf" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_parent"
+        android:paddingBottom="@dimen/padding_job_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/job_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/job_big_image_height"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_job_layout">
+
+                <com.miniapp.viewExtensions.MTextView
+                    android:id="@+id/category_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/detail_footerTextSize"
+                    app:custFont="fonts/montserrat_regular.otf" />
+
+                <com.miniapp.viewExtensions.MTextView
+                    android:id="@+id/created_at_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/detail_footerTextSize"
+                    app:custFont="fonts/montserrat_regular.otf" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/padding_jobs_items"
+                android:layout_marginRight="@dimen/padding_jobs_items"
+                android:background="@color/light_grey" />
+
+            <com.miniapp.viewExtensions.MTextView
+                android:id="@+id/phone_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_job_layout"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+            <com.miniapp.viewExtensions.MTextView
+                android:id="@+id/email_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_job_layout"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+            <com.miniapp.viewExtensions.MTextView
+                android:id="@+id/title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_job_layout"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+
+            <com.miniapp.viewExtensions.MTextView
+                android:id="@+id/description_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_jobs_items"
+                android:layout_marginRight="@dimen/padding_jobs_items"
+                android:padding="@dimen/padding_jobs_items"
+                android:textColor="@color/black"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+            <com.miniapp.viewExtensions.MEditText
+                android:id="@+id/amount_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_jobs_items"
+                android:background="@drawable/edittext_bg"
+                android:gravity="top"
+                android:hint="Amount*"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/normal_margin"
+                android:layout_marginLeft="@dimen/padding_job_layout"
+                android:layout_marginRight="@dimen/padding_job_layout"
+                android:textColorHint="@color/light_grey"
+                android:textSize="@dimen/subTitleTextSize"
+                app:custFont="fonts/montserrat_regular.otf"  />
+
+            <com.miniapp.viewExtensions.MEditText
+                android:id="@+id/description_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_marginLeft="@dimen/padding_job_layout"
+                android:layout_marginRight="@dimen/padding_job_layout"
+                android:background="@drawable/edittext_bg"
+                android:gravity="top"
+                android:hint="Description"
+                android:padding="@dimen/edittext_padding"
+                android:textColorHint="@color/light_grey"
+                android:textSize="@dimen/subTitleTextSize"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+            <com.miniapp.viewExtensions.MButton
+                android:id="@+id/send_proposal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:padding="@dimen/normal_margin"
+                android:text="@string/send_proposal_text"
+                app:custFont="fonts/montserrat_regular.otf" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<com.miniapp.viewExtensions.MButton-->
+    <!--android:id="@+id/send_proposal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_margin="@dimen/activity_horizontal_margin"-->
+    <!--android:text="@string/send_proposal_text" />-->
+</RelativeLayout>

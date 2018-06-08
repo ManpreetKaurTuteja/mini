@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.miniapp.home.fragments.WalletFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <com.miniapp.viewExtensions.MEditText
+            android:id="@+id/enter_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding_job_layout"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:paddingBottom="@dimen/padding_job_layout"
+            android:paddingTop="@dimen/padding_job_layout"
+            app:custFont="fonts/montserrat_regular.otf" />
+
+        <com.miniapp.viewExtensions.MButton
+            android:id="@+id/add_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/padding_job_layout"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/normal_margin"
+            android:paddingRight="@dimen/normal_margin"
+            android:text="+ Add Money"
+            app:custFont="fonts/montserrat_regular.otf" />
+    </LinearLayout>
+
+    <com.miniapp.viewExtensions.MTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_job_layout"
+        android:text="TOTAL BALANCE" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/padding_jobs_items"
+        android:background="@color/app_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/normal_margin">
+
+        <com.miniapp.viewExtensions.MTextView
+            android:id="@+id/balance_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_job_layout"
+            android:text="Rs. 3765"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/balance_textSize"
+            android:textStyle="bold"
+            app:custFont="fonts/montserrat_regular.otf" />
+
+        <com.miniapp.viewExtensions.MButton
+            android:id="@+id/transfer_to_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/normal_margin"
+            android:paddingRight="@dimen/normal_margin"
+            android:text="Transfer to Bank"
+            app:custFont="fonts/montserrat_regular.otf" />
+    </RelativeLayout>
+
+    <!--<com.miniapp.viewExtensions.MTextView-->
+    <!--android:id="@+id/addmoney_textview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="@dimen/normal_margin"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:padding="@dimen/padding_jobs_items"-->
+    <!--android:text="+ Add Money"-->
+    <!--android:textColor="@color/app_color"-->
+    <!--android:textSize="@dimen/textSize"-->
+    <!--android:textStyle="bold"-->
+    <!--app:custFont="fonts/montserrat_regular.otf" />-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_color" />
+
+    <com.miniapp.viewExtensions.MTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_job_layout"
+        android:layout_marginTop="@dimen/header_top_margin"
+        android:text="TOTAL BALANCE"
+        app:custFont="fonts/montserrat_regular.otf" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/padding_jobs_items"
+        android:background="@color/app_color" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_job_layout"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

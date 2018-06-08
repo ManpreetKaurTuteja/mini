@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<group-->
+    <!--android:id="@+id/gorupId_me"-->
+    <!--android:checkableBehavior="single">-->
+    <!--<item-->
+    <!--android:id="@+id/me"-->
+    <!--android:title="@string/me_text"-->
+    <!--app:actionLayout="@layout/menu_layout"-->
+    <!--app:showAsAction="always" />-->
+    <!--</group>-->
+    <group
+        android:id="@+id/gorupId1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/find_work"
+            android:title="@string/find_work_text"
+            app:actionLayout="@layout/menu_layout"
+            app:showAsAction="always" />
+    </group>
+    <group
+        android:id="@+id/gorup2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/add_job"
+            android:title="@string/add_work_text"
+            app:actionLayout="@layout/menu_layout"
+            app:showAsAction="always" />
+    </group>
+    <group
+        android:id="@+id/gorup21"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/proposals"
+            android:title="@string/proposals_text"
+            app:actionLayout="@layout/menu_layout"
+            app:showAsAction="always" />
+    </group>
+    <group
+        android:id="@+id/gorup22"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/see_profiles"
+            android:title="@string/see_profiles_text"
+            app:actionLayout="@layout/menu_layout"
+            app:showAsAction="always" />
+    </group>
+    <group
+        android:id="@+id/gorup3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/settings"
+            android:title="@string/settings_text"
+            app:actionLayout="@layout/menu_layout"
+            app:showAsAction="always" />
+    </group>
+    <group
+        android:id="@+id/gorupId4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/about"
+            android:title="@string/about_text"
+            app:actionLayout="@layout/menu_layout"
+            app:showAsAction="always" />
+    </group>
+    <group
+        android:id="@+id/gorupId_wallet"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/wallet"
+            android:title="@string/wallet_text"
+            app:actionLayout="@layout/menu_layout"
+            app:showAsAction="always" />
+    </group>
+    <group
+        android:id="@+id/gorup_logout"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/logout"
+            android:title="@string/logout_text"
+            app:actionLayout="@layout/menu_layout"
+            app:showAsAction="always" />
+    </group>
+</menu>

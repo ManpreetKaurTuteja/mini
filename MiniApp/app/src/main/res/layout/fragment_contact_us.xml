@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/header_top_margin"
+    android:background="@color/off_white_screen_bg"
+    android:orientation="vertical"
+    tools:context="com.miniapp.home.fragments.ContactUsFragment">
+
+    <com.miniapp.viewExtensions.MEditText
+        android:id="@+id/subject_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_bg"
+        android:hint="@string/subject_hint_text"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/edittext_padding"
+        android:textSize="@dimen/subTitleTextSize"
+        app:custFont="fonts/montserrat_regular.otf" />
+
+    <com.miniapp.viewExtensions.MEditText
+        android:id="@+id/message_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/msg_box_height"
+        android:layout_marginTop="@dimen/edittext_padding"
+        android:background="@drawable/edittext_bg"
+        android:gravity="top"
+        android:hint="@string/msg_hint_text"
+        android:padding="@dimen/edittext_padding"
+        android:textSize="@dimen/subTitleTextSize"
+        app:custFont="fonts/montserrat_regular.otf" />
+
+    <com.miniapp.viewExtensions.MButton
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:background="@color/app_color"
+        android:text="@string/submit_text"
+        android:textColor="@color/app_button_color"
+        app:custFont="fonts/montserrat_regular.otf" />
+</LinearLayout>

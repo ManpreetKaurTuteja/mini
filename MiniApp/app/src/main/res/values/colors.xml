@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#e31815</color>
+    <color name="white">#FFFFFF</color>
+    <color name="off_white_screen_bg">#FAFAFA</color>
+    <color name="black">#000000</color>
+    <!--<color name="app_color">#732727</color>-->
+    <color name="app_color">#932a3f</color>
+    <color name="app_transparent_color">#99732727</color>
+    <color name="app_button_color">#FAEBD7</color>
+    <color name="grey">#A9A9A9</color>
+    <color name="transparent_black">#A3000000</color>
+    <color name="request_bubble_bg">#50000000</color>
+    <color name="light_grey">#D3D3D3</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="fb_bg_color">#3b5ba7</color>
+    <!--<color name="light_c_green">#9cccb3</color>-->
+    <!--<color name="c_green">#7cccb3</color>-->
+</resources>

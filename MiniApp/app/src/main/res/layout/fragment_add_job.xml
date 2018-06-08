@@ -1,0 +1,112 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white_screen_bg"
+    tools:context="com.miniapp.home.fragments.AddJobFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:orientation="vertical">
+
+            <com.miniapp.viewExtensions.MEditText
+                android:id="@+id/title_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/post_title_hint_text"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/edittext_padding"
+                android:textSize="@dimen/subTitleTextSize"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+            <FrameLayout
+                android:id="@+id/spinnerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/edittext_padding"
+                android:background="@drawable/edittext_bg"
+                android:padding="@dimen/edittext_padding">
+
+                <Spinner
+                    android:id="@+id/category_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/spinner_category"
+                    android:textAlignment="center"></Spinner>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/sub_spinnerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/edittext_padding"
+                android:background="@drawable/edittext_bg"
+                android:padding="@dimen/edittext_padding"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/sub_category_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/spinner_category"
+                    android:textAlignment="center"></Spinner>
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" />
+
+            <com.miniapp.viewExtensions.MEditText
+                android:id="@+id/description_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/description_box_height"
+                android:layout_marginTop="@dimen/edittext_padding"
+                android:background="@drawable/edittext_bg"
+                android:gravity="top"
+                android:hint="@string/post_description_hint_text"
+                android:padding="@dimen/edittext_padding"
+                android:textSize="@dimen/subTitleTextSize"
+                app:custFont="fonts/montserrat_regular.otf" />
+            <!--</LinearLayout>-->
+
+            <com.miniapp.viewExtensions.MButton
+                android:id="@+id/select_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/header_top_margin"
+                android:background="@color/app_color"
+                android:text="Browse Image"
+                android:textColor="@color/app_button_color"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+            <com.miniapp.viewExtensions.MButton
+                android:id="@+id/add_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/button_margin"
+                android:layout_marginTop="@dimen/header_top_margin"
+                android:background="@color/app_color"
+                android:text="@string/save_text"
+                android:textColor="@color/app_button_color"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

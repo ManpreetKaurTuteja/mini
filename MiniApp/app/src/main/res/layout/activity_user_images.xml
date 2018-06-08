@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.miniapp.home.activities.UserImagesActivity">
+
+    <com.miniapp.viewExtensions.MTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding_job_layout"
+        android:text="@string/more_images_text"
+        android:textColor="@color/app_button_color"
+        android:textSize="@dimen/textSize"
+        app:custFont="fonts/montserrat_regular.otf" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/other_images_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:scrollbarThumbVertical="@drawable/custom_scroll_style" />
+
+            <ImageView
+                android:id="@+id/add_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/button_margin"
+                android:src="@drawable/plus_icon" />
+
+            <com.miniapp.viewExtensions.MButton
+                android:id="@+id/save_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/save_text"
+                android:textSize="@dimen/textSize"
+                app:custFont="fonts/montserrat_regular.otf" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/login_layout_margin"
+    android:paddingRight="@dimen/login_layout_margin"
+    tools:context="com.miniapp.login.activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_top_margin"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/logo" />
+        <!--<com.miniapp.viewExtensions.MTextView-->
+        <!--android:id="@+id/welcome_text"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/app_logo_text"-->
+        <!--android:textColor="@color/app_color"-->
+        <!--android:textSize="@dimen/splash_title_text_size"-->
+        <!--android:textStyle="bold"-->
+        <!--app:custFont="fonts/montserrat_regular.otf" />-->
+
+        <LinearLayout
+            android:id="@+id/login_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome_text"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.miniapp.viewExtensions.MEditText
+                android:id="@+id/email_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/email_hint_text"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/edittext_padding"
+                android:textSize="@dimen/loginTextSize"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+            <com.miniapp.viewExtensions.MEditText
+                android:id="@+id/password_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/password_hint_text"
+                android:inputType="textPassword"
+                android:padding="@dimen/edittext_padding"
+                android:textSize="@dimen/loginTextSize"
+                app:custFont="fonts/montserrat_regular.otf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_buttons_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_parent"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:orientation="vertical">
+
+            <com.miniapp.viewExtensions.MButton
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_bg"
+                android:paddingLeft="@dimen/button_margin"
+                android:paddingRight="@dimen/button_margin"
+                android:text="Login"
+                android:textColor="@color/white"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+        </LinearLayout>
+
+        <com.miniapp.viewExtensions.MTextView
+            android:id="@+id/forget_password_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_jobs_items"
+            android:gravity="center"
+            android:text="@string/forget_password_text"
+            android:textAlignment="center"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/loginTextSize"
+            app:custFont="fonts/montserrat_regular.otf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/social_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/padding_job_layout"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/com_facebook_blue">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/padding_job_layout"
+                android:layout_marginRight="@dimen/padding_job_layout"
+                android:src="@drawable/fb_icon" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/padding_jobs_items"
+                android:layout_marginTop="@dimen/padding_jobs_items"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/fb_login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/com_facebook_blue"
+                android:text="Login with Facebook"
+                android:textColor="@color/app_button_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:background="@color/red">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/padding_job_layout"
+                android:layout_marginRight="@dimen/padding_job_layout"
+                android:src="@drawable/google_icon" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/padding_jobs_items"
+                android:layout_marginTop="@dimen/padding_jobs_items"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/gmail_login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:text="Login with Google"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!--<com.miniapp.viewExtensions.MButton-->
+        <!--android:id="@+id/gmail_login_button"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/normal_margin"-->
+        <!--android:background="@drawable/button_bg"-->
+        <!--android:text="Login with Google"-->
+        <!--android:textColor="@color/white"-->
+        <!--app:custFont="fonts/pluto_regular.otf" />-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_job_layout"
+            android:orientation="horizontal">
+
+            <com.miniapp.viewExtensions.MTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:gravity="right"
+                android:text="@string/new_to_mini_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/loginTextSize"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+            <com.miniapp.viewExtensions.MTextView
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:gravity="right"
+                android:text="@string/signup_text"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/loginTextSize"
+                app:custFont="fonts/montserrat_regular.otf" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

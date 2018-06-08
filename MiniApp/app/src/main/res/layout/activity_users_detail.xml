@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.miniapp.home.activities.UsersDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/title_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color">
+
+        <com.miniapp.viewExtensions.MTextView
+            android:id="@+id/title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/padding_jobs_items"
+            android:text="User Profile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize"
+            app:custFont="fonts/montserrat_regular.otf" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/title_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/dp_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/job_big_image_height"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_job_layout">
+
+                <com.miniapp.viewExtensions.MTextView
+                    android:id="@+id/usertype_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/detail_footerTextSize"
+                    app:custFont="fonts/montserrat_regular.otf" />
+
+                <com.miniapp.viewExtensions.MTextView
+                    android:id="@+id/category_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/detail_footerTextSize"
+                    app:custFont="fonts/montserrat_regular.otf" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/padding_jobs_items"
+                android:layout_marginRight="@dimen/padding_jobs_items"
+                android:background="@color/light_grey" />
+
+            <com.miniapp.viewExtensions.MTextView
+                android:id="@+id/name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_job_layout"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+            <com.miniapp.viewExtensions.MTextView
+                android:id="@+id/email_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_job_layout"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold"
+                app:custFont="fonts/pluto_regular.otf" />
+
+            <com.miniapp.viewExtensions.MTextView
+                android:id="@+id/phone_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_job_layout"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+            <com.miniapp.viewExtensions.MTextView
+                android:id="@+id/gender_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_job_layout"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+            <com.miniapp.viewExtensions.MTextView
+                android:id="@+id/description_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_jobs_items"
+                android:layout_marginRight="@dimen/padding_jobs_items"
+                android:padding="@dimen/padding_jobs_items"
+                android:textColor="@color/black"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/other_images_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:scrollbarThumbVertical="@drawable/custom_scroll_style" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white_screen_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.miniapp.home.fragments.WorkFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/jobs_content_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbarThumbVertical="@drawable/custom_scroll_style" />
+
+    <com.miniapp.viewExtensions.MTextView
+        android:id="@+id/noJobTextview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_jobs_found_text"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/loginTextSize"
+        android:visibility="gone"
+        app:custFont="fonts/montserrat_regular.otf"/>
+
+    <LinearLayout
+        android:id="@+id/noNetParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:visibility="gone">
+
+        <com.miniapp.viewExtensions.MTextView
+            android:id="@+id/noNetTextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_internet_connection"
+            android:textAlignment="center"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/loginTextSize"
+            app:custFont="fonts/montserrat_regular.otf"/>
+
+        <com.miniapp.viewExtensions.MButton
+            android:id="@+id/retryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@color/app_color"
+            android:text="Retry"
+            android:textColor="@color/white"
+            app:custFont="fonts/montserrat_regular.otf"/>
+    </LinearLayout>
+</RelativeLayout>

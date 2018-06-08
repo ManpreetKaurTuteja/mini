@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/normal_margin"
+    tools:context="com.miniapp.home.activities.SendProposalActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.miniapp.viewExtensions.MTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/padding_jobs_items"
+                    android:layout_marginRight="@dimen/padding_jobs_items"
+                    android:padding="@dimen/padding_jobs_items"
+                    android:text="Your Bid Price (INR)"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:custFont="fonts/montserrat_regular.otf" />
+
+                <com.miniapp.viewExtensions.MEditText
+                    android:id="@+id/bid_price_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/padding_jobs_items"
+                    android:layout_marginRight="@dimen/padding_jobs_items"
+                    android:hint="00"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    app:custFont="fonts/montserrat_regular.otf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.miniapp.viewExtensions.MTextView
+                    android:id="@+id/msg_texview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_jobs_items"
+                    android:text="Message"
+                    app:custFont="fonts/montserrat_regular.otf" />
+
+                <com.miniapp.viewExtensions.MEditText
+                    android:id="@+id/msg_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/edittext_bg"
+                    android:gravity="top"
+                    android:hint="@string/enter_professional_exp_text"
+                    android:padding="@dimen/edittext_padding"
+                    android:textColorHint="@color/light_grey"
+                    android:textSize="@dimen/subTitleTextSize"
+                    app:custFont="fonts/montserrat_regular.otf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:orientation="vertical">
+
+                <com.miniapp.viewExtensions.MTextView
+                    android:id="@+id/time_texview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_jobs_items"
+                    android:text="Duration (Days)"
+                    app:custFont="fonts/montserrat_regular.otf" />
+
+                <com.miniapp.viewExtensions.MEditText
+                    android:id="@+id/time_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bg"
+                    android:gravity="top"
+                    android:hint="1"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/edittext_padding"
+                    android:textColorHint="@color/light_grey"
+                    android:textSize="@dimen/subTitleTextSize"
+                    app:custFont="fonts/montserrat_regular.otf" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.miniapp.viewExtensions.MButton
+        android:id="@+id/send_proposal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/send_proposal_text" />
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.miniapp.signup.activities.PhoneNumActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_margin"
+        android:padding="@dimen/fab_margin">
+
+        <com.miniapp.viewExtensions.MEditText
+            android:id="@+id/phone_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="7"
+            android:background="@drawable/edittext_bg"
+            android:hint="@string/phone_num_hint_text"
+            android:padding="@dimen/edittext_padding"
+            android:textSize="@dimen/tabTextSize"
+            app:custFont="fonts/montserrat_regular.otf"/>
+
+        <com.miniapp.viewExtensions.MButton
+            android:id="@+id/verify_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Verify"
+            app:custFont="fonts/montserrat_regular.otf"/>
+    </LinearLayout>
+</RelativeLayout>

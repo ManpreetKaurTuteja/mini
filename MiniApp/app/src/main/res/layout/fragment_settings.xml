@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/off_white_screen_bg"
+    tools:context="com.miniapp.home.fragments.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.miniapp.viewExtensions.MTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_job_layout"
+            android:text="@string/notification_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tabTextSize"
+            app:custFont="fonts/montserrat_regular.otf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_job_layout">
+
+            <com.miniapp.viewExtensions.MTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_job_layout"
+                android:paddingTop="@dimen/padding_job_layout"
+                android:text="@string/messages_notification_text"
+                android:textSize="@dimen/loginTextSize"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+            <Switch
+                android:id="@+id/msg_notification_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/msg_notification_toggle"
+                android:layout_marginTop="@dimen/padding_job_layout"
+                android:background="@color/light_grey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_job_layout"
+            android:paddingLeft="@dimen/padding_job_layout"
+            android:paddingRight="@dimen/padding_job_layout">
+
+            <com.miniapp.viewExtensions.MTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:paddingBottom="@dimen/padding_job_layout"
+                android:paddingTop="@dimen/padding_job_layout"
+                android:text="@string/job_invite_notification_text"
+                android:textSize="@dimen/loginTextSize"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+            <Switch
+                android:id="@+id/job_invite_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey" />
+
+        <com.miniapp.viewExtensions.MTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_job_layout"
+            android:text="@string/account_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tabTextSize"
+            app:custFont="fonts/montserrat_regular.otf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_job_layout">
+
+            <com.miniapp.viewExtensions.MTextView
+                android:id="@+id/deactivate_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_job_layout"
+                android:text="@string/deactivate_account_text"
+                android:textSize="@dimen/loginTextSize"
+                android:visibility="gone"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/msg_notification_toggle"
+                android:layout_marginTop="@dimen/padding_jobs_items"
+                android:background="@color/light_grey"
+                android:visibility="gone" />
+
+            <com.miniapp.viewExtensions.MTextView
+                android:id="@+id/delete_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_job_layout"
+                android:paddingTop="@dimen/padding_job_layout"
+                android:text="@string/delete_account_text"
+                android:textSize="@dimen/loginTextSize"
+                app:custFont="fonts/montserrat_regular.otf" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey" />
+
+        <com.miniapp.viewExtensions.MTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_job_layout"
+            android:text="@string/support_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tabTextSize"
+            app:custFont="fonts/montserrat_regular.otf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_job_layout">
+
+            <com.miniapp.viewExtensions.MTextView
+                android:id="@+id/contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_job_layout"
+                android:paddingTop="@dimen/padding_job_layout"
+                android:text="@string/report_problem_text"
+                android:textSize="@dimen/loginTextSize"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/msg_notification_toggle"
+                android:layout_marginTop="@dimen/padding_jobs_items"
+                android:background="@color/light_grey" />
+
+            <com.miniapp.viewExtensions.MTextView
+                android:id="@+id/privacy_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_job_layout"
+                android:paddingTop="@dimen/padding_job_layout"
+                android:text="@string/privacy_policy_text"
+                android:textSize="@dimen/loginTextSize"
+                app:custFont="fonts/montserrat_regular.otf" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey" />
+    </LinearLayout>
+</LinearLayout>

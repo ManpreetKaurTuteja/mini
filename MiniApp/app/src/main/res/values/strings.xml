@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">Mini</string>
+    <string name="app_logo_text">mini</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="save_text">Save</string>
+    <string name="ok_text">Ok</string>
+    <string name="no_internet_connection">No connection found. Kindly check your net or wifi.</string>
+    <string name="activity_does_not_exist">Activity doesn\'t exists.</string>
+    <string name="permission">Permissions</string>
+    <string name="gps_permission_allow_string">GPS permission required for location access.</string>
+
+    //login screen
+    <string name="welcome_text">Welcome!</string>
+    <string name="email_hint_text">Email Address</string>
+    <string name="username_hint_text">Username</string>
+    <string name="phone_num_hint_text">Enter Mobile Number</string>
+    <string name="password_hint_text">Password</string>
+    <string name="confirm_password_hint_text">Confirm Password</string>
+    <string name="forget_password_text">Forget Password?</string>
+    <string name="admin_text">Admin</string>
+    <string name="user_text">User</string>
+    <string name="reporter_text">Reporter</string>
+    <string name="signup">SignUp</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="new_to_mini_text">New to Mini?</string>
+    <string name="signup_text">SIGN UP</string>
+    <string name="already_registered_text">Already registered? </string>
+    <string name="login_caution_text">Login</string>
+
+    //login keys
+    <string name="facebook_app_id">156723604997793</string>
+    <string name="fb_login_protocol_scheme">fb156723604997793</string>
+    <string name="ak_login_protocol_scheme">ak156723604997793</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">52fc15b952677bec0aae848400672647</string>
+    <string name="google_client_id">18941225024-5002v77vuf88gv26sohb8hajcpovtuok.apps.googleusercontent.com</string>
+    <string name="google_client_secret">4ZKOU1tmVA_V7yfn5c1IByG4</string>
+
+    //signup
+    <string name="signup_title_text">Signup</string>
+    <string name="gender_text">Gender : </string>
+    <string name="select_gender_text">Select your gender</string>
+    <string name="user_name_text">User name :   </string>
+    <string name="user_type_text">Freelancer</string>
+    <string name="email_text">Email Id :   </string>
+    <string name="password_text">Password : </string>
+    <string name="confirm_password_text">Confirm Password : </string>
+    <string name="forgot_password_text">Forgot Password</string>
+
+    // navigation item
+    <string name="me_text">Me</string>
+    <string name="find_work_text">Find Work</string>
+    <string name="add_work_text">Post a Job</string>
+    <string name="proposals_text">Proposals</string>
+    <string name="see_profiles_text">See Profiles</string>
+    <string name="settings_text">Settings</string>
+    <string name="about_text">About</string>
+    <string name="wallet_text">Wallet</string>
+    <string name="logout_text">Logout</string>
+    <string name="navigation_drawer_open">Navigation drawer opened</string>
+    <string name="navigation_drawer_close">Navigation drawer closed</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="no_jobs_found_text">No jobs found</string>
+
+    //add job
+    <string name="add_job_text">Add Job</string>
+    <string name="post_title_hint_text">Job Title</string>
+    <string name="post_description_hint_text">Job Description</string>
+    <string name="submit_text">Submit</string>
+    <string name="spinner_category">Choose Category</string>
+    <string name="spinner_sub_category">Choose Sub Category</string>
+    <string name="image_picker_error">Something is wrong with that image. Pick a different one please.</string>
+    <string name="video_picker_error">Something is wrong with that video. Pick a different one please.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Comming Soon!</string>
+    //settings screen
+    <string name="notification_text">Notification</string>
+    <string name="account_text">Account</string>
+    <string name="support_text">Support</string>
+    <string name="messages_notification_text">Messages Notification</string>
+    <string name="job_invite_notification_text">Job Invite Notification</string>
+    <string name="deactivate_account_text">Deactivate Account</string>
+    <string name="delete_account_text">Delete Account</string>
+    <string name="report_problem_text">Report a Problem</string>
+    <string name="privacy_policy_text">Privacy Policy</string>
+
+    //ME SCREEN
+    <string name="edit_text">Edit</string>
+    <string name="category_text">Category</string>
+    <string name="enter_full_name_text">Enter full name</string>
+    <string name="enter_about_text">Describe yourself</string>
+    <string name="enter_job_category_text">Select your job category</string>
+    <string name="spinner_gender">Choose Gender</string>
+    <string name="spinner_usertype">Choose Type</string>
+    <string name="other_images_text">Other Images</string>
+    <string name="more_images_text">More Images</string>
+
+    //contact us
+    <string name="subject_hint_text">Subject</string>
+    <string name="msg_hint_text">Message</string>
+
+    //job detail
+    <string name="send_proposal_text">Send Proposal</string>
+    <string name="enter_professional_exp_text">Describe your professional experience</string>
+</resources>
+

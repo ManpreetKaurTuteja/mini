@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.miniapp.signup.activities.SignupActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:orientation="vertical">
+
+            <com.miniapp.viewExtensions.MTextView
+                android:id="@+id/signup_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/padding_job_layout"
+                android:text="@string/signup"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/splash_title_text_size"
+                android:textStyle="bold"
+                app:custFont="fonts/montserrat_regular.otf" />
+
+            <!--<com.miniapp.viewExtensions.MTextView-->
+            <!--android:id="@+id/user_type"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="User"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/loginTextSize"-->
+            <!--android:textStyle="bold"-->
+            <!--android:visibility="gone"-->
+            <!--app:custFont="fonts/pluto_regular.otf" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/header_top_margin"
+                android:gravity="center">
+
+                <com.miniapp.viewExtensions.MTextView
+                    android:id="@+id/phone_edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="7"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/phone_num_hint_text"
+                    android:padding="@dimen/edittext_padding"
+                    android:textSize="@dimen/subTitleTextSize"
+                    app:custFont="fonts/montserrat_regular.otf" />
+
+                <com.miniapp.viewExtensions.MButton
+                    android:id="@+id/change_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="Change"
+                    app:custFont="fonts/montserrat_regular.otf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/login_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/welcome_text"
+                android:layout_marginTop="@dimen/edittext_padding"
+                android:orientation="vertical">
+
+                <com.miniapp.viewExtensions.MEditText
+                    android:id="@+id/username_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/username_hint_text"
+                    android:padding="@dimen/edittext_padding"
+                    android:textSize="@dimen/subTitleTextSize"
+                    app:custFont="fonts/montserrat_regular.otf" />
+
+                <com.miniapp.viewExtensions.MEditText
+                    android:id="@+id/email_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edittext_padding"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/email_hint_text"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/edittext_padding"
+                    android:textSize="@dimen/subTitleTextSize"
+                    app:custFont="fonts/montserrat_regular.otf" />
+
+                <com.miniapp.viewExtensions.MEditText
+                    android:id="@+id/password_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edittext_padding"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/password_hint_text"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/edittext_padding"
+                    android:textSize="@dimen/subTitleTextSize"
+                    app:custFont="fonts/montserrat_regular.otf" />
+
+                <com.miniapp.viewExtensions.MEditText
+                    android:id="@+id/confirm_password_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edittext_padding"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="@string/confirm_password_hint_text"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/edittext_padding"
+                    android:textSize="@dimen/subTitleTextSize"
+                    app:custFont="fonts/montserrat_regular.otf" />
+
+                <FrameLayout
+                    android:id="@+id/spinnerUTypeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edittext_padding"
+                    android:background="@drawable/edittext_bg"
+                    android:padding="@dimen/edittext_padding">
+
+                    <Spinner
+                        android:id="@+id/spinnerUserType"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:prompt="@string/select_gender_text"></Spinner>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/spinnerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edittext_padding"
+                    android:background="@drawable/edittext_bg"
+                    android:padding="@dimen/edittext_padding">
+
+                    <Spinner
+                        android:id="@+id/spinnerGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:prompt="@string/select_gender_text"></Spinner>
+                </FrameLayout>
+                <!--<EditText-->
+                <!--android:id="@+id/confirm_password_edittext"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/fab_margin"-->
+                <!--android:background="@null"-->
+                <!--android:hint="@string/confirm_password_hint_text"-->
+                <!--android:inputType="textPassword"-->
+                <!--android:textSize="@dimen/tabTextSize" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/signup_buttons_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_parent"
+                android:layout_marginTop="@dimen/button_margin"
+                android:orientation="vertical">
+
+                <com.miniapp.viewExtensions.MButton
+                    android:id="@+id/signup_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signup"
+                    app:custFont="fonts/montserrat_regular.otf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:layout_marginTop="@dimen/padding_jobs_items"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <com.miniapp.viewExtensions.MTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/already_registered_text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/subTitleTextSize"
+                    app:custFont="fonts/montserrat_regular.otf" />
+
+                <com.miniapp.viewExtensions.MTextView
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_jobs_items"
+                    android:text="@string/login_caution_text"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/subTitleTextSize"
+                    app:custFont="fonts/montserrat_regular.otf" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
